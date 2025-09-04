@@ -1,15 +1,16 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    //declaracao de variaveis
+    // Declaração de variáveis
     char senha[6];
-    char senha_correta[] = "ASDFG";
-    //entrada de dados
-    printf("Digite a senha: ");
+
+    // Entrada de dados
+    printf("Digite a senha (ASDFG): ");
     scanf("%s", senha);
-    //processamento e saida
-    if (strcmp(senha, senha_correta) == 0) {
+
+    // Processamento e saída sem strcmp()
+    // Compara cada caractere individualmente
+    if (senha[0] == 'A' && senha[1] == 'S' && senha[2] == 'D' && senha[3] == 'F' && senha[4] == 'G' && senha[5] == '\0') {
         printf("Permissao concedida.\n");
     } else {
         printf("Acesso negado.\n");

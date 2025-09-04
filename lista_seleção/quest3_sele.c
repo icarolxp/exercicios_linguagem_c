@@ -8,7 +8,6 @@ int main() {
     printf("Digite a senha (ASDFG): ");
     scanf("%s", senha);
 
-    // Processamento e saída sem strcmp()
     // Compara cada caractere individualmente
     if (senha[0] == 'A' && senha[1] == 'S' && senha[2] == 'D' && senha[3] == 'F' && senha[4] == 'G' && senha[5] == '\0') {
         printf("Permissao concedida.\n");
